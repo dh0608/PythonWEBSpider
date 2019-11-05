@@ -1,0 +1,12 @@
+安装：
+    首先就是安装问题了，由于 Pyppeteer 采用了 Python 的 async 机制，
+    所以其运行要求的 Python 版本为 3.5 及以上。
+    安装：pip3 install pyppeteer 后 导入 import pyppeteer
+
+运行：
+    初次运行脚本会下载chromium，运行下面的脚本查看版本后，在系统环境变量里配置
+    PYPPETEER_HOME = '安装的路径'
+    import pyppeteer.chromium_downloader
+    print('默认版本是：{}'.format(pyppeteer.__chromium_revision__))
+    print('可执行文件默认路径：{}'.format(pyppeteer.chromium_downloader.chromiumExecutable.get('win64')))
+    print('win64平台下载链接为：{}'.format(pyppeteer.chromium_downloader.downloadURLs.get('win64')))

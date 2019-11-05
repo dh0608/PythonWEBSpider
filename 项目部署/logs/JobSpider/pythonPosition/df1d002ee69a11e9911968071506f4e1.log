@@ -1,0 +1,412 @@
+2019-10-04 19:34:09 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: JobSpider)
+2019-10-04 19:34:09 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17134-SP0
+2019-10-04 19:34:09 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JobSpider', 'LOG_FILE': 'logs\\JobSpider\\pythonPosition\\df1d002ee69a11e9911968071506f4e1.log', 'NEWSPIDER_MODULE': 'JobSpider.spiders', 'SPIDER_MODULES': ['JobSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'}
+2019-10-04 19:34:09 [scrapy.extensions.telnet] INFO: Telnet Password: 580d73940346681e
+2019-10-04 19:34:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-04 19:34:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-04 19:34:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-04 19:34:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['JobSpider.pipelines.JobspiderPipeline',
+ 'JobSpider.pipelines.JobspiderDbPipeline']
+2019-10-04 19:34:09 [scrapy.core.engine] INFO: Spider opened
+2019-10-04 19:34:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-04 19:34:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-10-04 19:34:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=> (referer: None)
+2019-10-04 19:34:10 [pythonPosition] DEBUG: ——————————————————————————————————开始解析网页————————————————————————————————
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '“前程无忧”51job.com（上海）',
+ 'name': '大数据研发工程师',
+ 'pub_date': '10-04',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '中国航空无线电电子研究所',
+ 'name': '软件测试（C、Python）工程师',
+ 'pub_date': '10-04',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '上海爱数信息技术股份有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-04',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '通联数据股份公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-04',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '上海万向区块链股份公司',
+ 'name': 'Golang/Python研发工程师',
+ 'pub_date': '10-04',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海澳马信息技术服务有限公司',
+ 'name': 'python数据分析师',
+ 'pub_date': '10-04',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '字节跳动',
+ 'name': '高级Python开发工程师 - -抖音上海',
+ 'pub_date': '10-04',
+ 'salary': '2.5-5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '达观数据',
+ 'name': '开发经理/技术专家（python）',
+ 'pub_date': '10-04',
+ 'salary': '2-3万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-普陀区',
+ 'corp': '上海子禾电子商务有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-04',
+ 'salary': '15-20万/年'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-闵行区',
+ 'corp': '上海犇众信息技术有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-04',
+ 'salary': '1.2-2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '河南省人力资源和社会保障厅',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-04',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-虹口区',
+ 'corp': '浙江每日互动网络科技股份有限公司...',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-04',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '上海中路（集团）有限公司',
+ 'name': 'python程序员',
+ 'pub_date': '10-03',
+ 'salary': '0.8-1万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '阿拉丁试剂（上海）有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-03',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海汉朔信息科技有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-03',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-普陀区',
+ 'corp': '上海凯融信息科技有限公司',
+ 'name': 'Python开发/深度学习',
+ 'pub_date': '10-03',
+ 'salary': '0.7-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-黄浦区',
+ 'corp': '上海华钦信息科技股份有限公司',
+ 'name': 'Python开发工程师（英语流利）',
+ 'pub_date': '10-03',
+ 'salary': '1.8-2.2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-徐汇区',
+ 'corp': '上海坤雷实业有限公司',
+ 'name': 'python开发',
+ 'pub_date': '10-03',
+ 'salary': '6-8千/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-徐汇区',
+ 'corp': '浙江迅风智能科技有限公司',
+ 'name': 'Python高级开发工程师',
+ 'pub_date': '10-03',
+ 'salary': '1-2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-静安区',
+ 'corp': '上海云逐信息技术有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-03',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '普华永道信息技术（上海）有限公司...',
+ 'name': 'Python高级开发工程师',
+ 'pub_date': '10-03',
+ 'salary': '1.5-2.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-徐汇区',
+ 'corp': '上海德拓信息技术股份有限公司',
+ 'name': 'Python数据工程师',
+ 'pub_date': '10-03',
+ 'salary': '1.2-2.2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '异地招聘',
+ 'corp': '无锡电商之家网络科技有限公司',
+ 'name': 'Python程序员',
+ 'pub_date': '10-03',
+ 'salary': '0.8-1.4万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-杨浦区',
+ 'corp': '戴尔（中国）有限公司',
+ 'name': '高级开发工程师-C++/Linux/Python',
+ 'pub_date': '10-03',
+ 'salary': '面议'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-静安区',
+ 'corp': '米思米（中国）精密机械贸易有限公...',
+ 'name': 'Python-RPA开发实习生',
+ 'pub_date': '10-03',
+ 'salary': '184元/天'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-宝山区',
+ 'corp': '上海添庆网络科技股份有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '10-02',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海泛云信息科技有限公司',
+ 'name': 'Python 开发工程师',
+ 'pub_date': '10-02',
+ 'salary': '0.8-1.2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '上海合阔信息技术有限公司',
+ 'name': 'Python开发工程师（SaaS云端开发）',
+ 'pub_date': '10-01',
+ 'salary': '1.2-2.4万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海吾创信息科技有限公司',
+ 'name': 'Python自动化脚本开发工程师',
+ 'pub_date': '10-01',
+ 'salary': '0.9-1.4万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-杨浦区',
+ 'corp': '上海犀语科技有限公司',
+ 'name': 'Python开发工程师（数据处理）',
+ 'pub_date': '10-01',
+ 'salary': '0.8-1.6万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-杨浦区',
+ 'corp': '上海晏鼠计算机技术股份有限公司',
+ 'name': 'python 爬虫工程师',
+ 'pub_date': '10-01',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-长宁区',
+ 'corp': '上海美狄莎思美奇商贸有限公司',
+ 'name': 'PYTHON工程师/VBS工程师/爬虫工程师/RPA工程师',
+ 'pub_date': '10-01',
+ 'salary': '0.8-2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海乾酷医疗投资有限公司',
+ 'name': 'python开发工程师',
+ 'pub_date': '10-01',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '瓦戈科技（上海）有限公司',
+ 'name': 'Python高级开发工程师',
+ 'pub_date': '10-01',
+ 'salary': '1.5-3万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-静安区',
+ 'corp': '喜士多便利店C-STORE-零售业-连锁',
+ 'name': '数据分析 开发工程师（Python）',
+ 'pub_date': '10-01',
+ 'salary': '1-1.6万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-嘉定区',
+ 'corp': '上海诚勤刀具有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-闵行区',
+ 'corp': '上海软科教育信息咨询有限公司',
+ 'name': 'Python数据工程师',
+ 'pub_date': '09-30',
+ 'salary': '0.8-1.2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海金杉数金互联网科技有限公司',
+ 'name': 'Python开发经理',
+ 'pub_date': '09-30',
+ 'salary': '2-2.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-徐汇区',
+ 'corp': '上海数旦信息技术有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1-2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-普陀区',
+ 'corp': '上海机器人产业技术研究院有限公司...',
+ 'name': 'Python后端开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '18-22万/年'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '深圳市紫川软件有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-普陀区',
+ 'corp': '衡哲信息科技（上海）有限公司',
+ 'name': 'python爬虫工程师',
+ 'pub_date': '09-30',
+ 'salary': '1-1.8万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-静安区',
+ 'corp': '贤佳国际贸易（上海）有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1.5-2.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '怡安翰威特咨询（上海）有限公司',
+ 'name': 'Python 开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1.5-3万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-浦东新区',
+ 'corp': '上海伯豪生物技术有限公司',
+ 'name': '生物信息工程师（python）',
+ 'pub_date': '09-30',
+ 'salary': '0.8-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海',
+ 'corp': '上海有孚网络股份有限公司',
+ 'name': '高级python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '2-3万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-虹口区',
+ 'corp': '上海杰奕信息技术有限公司',
+ 'name': 'python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '0.8-2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-普陀区',
+ 'corp': '安美微客（北京）互联网科技有限公...',
+ 'name': '研发工程师（运维、python语言）',
+ 'pub_date': '09-30',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-黄浦区',
+ 'corp': '上海奕见企业管理咨询有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1.5-2万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-静安区',
+ 'corp': '亿翰智库',
+ 'name': '高级Python算法工程师',
+ 'pub_date': '09-30',
+ 'salary': '2-2.5万/月'}
+2019-10-04 19:34:10 [pythonPosition] DEBUG: csv path:E:\练习\Pythonpro\练习\4.爬虫\项目部署
+2019-10-04 19:34:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.51job.com/list/020000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=>
+{'city': '上海-徐汇区',
+ 'corp': '上海卓易科技股份有限公司',
+ 'name': 'Python开发工程师',
+ 'pub_date': '09-30',
+ 'salary': '1-1.5万/月'}
+2019-10-04 19:34:10 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-10-04 19:34:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 568,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 24385,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.986376,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 10, 4, 11, 34, 10, 448005),
+ 'item_scraped_count': 51,
+ 'log_count/DEBUG': 104,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 10, 4, 11, 34, 9, 461629)}
+2019-10-04 19:34:10 [scrapy.core.engine] INFO: Spider closed (finished)

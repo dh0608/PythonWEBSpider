@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+E:\练习\Pythonpro\venv\Scripts\python.exe E:/练习/Pythonpro/练习/4.爬虫/10.Scapy框架/people/people/test.py
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=GB2312"/>
+    <meta http-equiv="Content-Language" content="utf-8"/>
+    <meta content="all" name="robots"/>
+    <title>高层动态--时政--人民网</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="filetype" content="1"/>
+    <meta name="publishedtype" content="1"/>
+    <meta name="pagetype" content="2"/>
+    <meta name="catalogs" content="1024"/>
+    <!-- style -->
+    <link rel="stylesheet" href="http://www.people.com.cn/img/MAIN/2016/11/116906/page.css" type="text/css"
+          media="all"/>
+    <link rel="stylesheet" href="http://www.people.com.cn/img/MAIN/2016/11/116906/page_two.css" type="text/css"
+          media="all"/>
+    <link rel="stylesheet" href="http://www.people.com.cn/img/MAIN/2016/11/116906/page_ej.css" type="text/css"
+          media="all"/>
+
+    <script type="text/javascript" src='http://tools.people.com.cn/libs/jquery/1.7.1/jquery-1.7.1.min.js'></script>
+    <script type="text/javascript" src='http://www.people.com.cn/img/2016people/jslibs/peopleindex.min.js'
+            charset='utf-8'></script>
+
+    <script type="text/javascript" src="http://www.people.com.cn/img/MAIN/2016/11/116906/js/jcarousellite.js"></script>
+    <script type="text/javascript" src="http://www.people.com.cn/img/MAIN/2016/11/116906/js/main.js"></script>
+    <script type="text/javascript" src='http://www.people.com.cn/img/2016wb/main.js' charset='utf-8'></script>
+    <script type="text/javascript" src="http://www.people.com.cn/css/search.js"></script>
+</head>
+<body>
+<!--top-->
+<div class="top_nav clearfix">
+    <div class="w1000 white pos_re_login">
+        <div class="fl" id="rwb_nav">
+            <style type="text/css">
+                .top_nav div a {
+                    padding: 0 4px 0 3px;
+                }
+            </style>
+            <a href="http://www.people.com.cn/" target="_blank">网站首页</a><a href="http://politics.people.com.cn/"
+                                                                           target="_blank">时政</a><a
+                href="http://world.people.com.cn/" target="_blank">国际</a><a href="http://finance.people.com.cn/"
+                                                                            target="_blank">财经</a><a
+                href="http://tw.people.com.cn/" target="_blank">台湾</a><a href="http://military.people.com.cn/"
+                                                                         target="_blank">军事</a><a
+                href="http://opinion.people.com.cn/" target="_blank">观点</a><a href="http://leaders.people.com.cn/"
+                                                                              target="_blank">领导</a><a
+                href="http://renshi.people.com.cn/" target="_blank">人事</a><a href="http://theory.people.com.cn/"
+                                                                             target="_blank">理论</a><a
+                href="http://legal.people.com.cn/" target="_blank">法治</a><a href="http://society.people.com.cn/"
+                                                                            target="_blank">社会</a><a
+                href="http://industry.people.com.cn/" target="_blank">产经</a><a href="http://edu.people.com.cn/"
+                                                                               target="_blank">教育</a><a
+                href="http://kpzg.people.com.cn/" target="_blank">科普</a><a href="http://sports.people.com.cn/"
+                                                                           target="_blank">体育</a><a
+                href="http://culture.people.com.cn/" target="_blank">文化</a><a href="http://art.people.com.cn/"
+                                                                              target="_blank">书画</a><a
+                href="http://house.people.com.cn/" target="_blank">房产</a><a href="http://auto.people.com.cn/"
+                                                                            target="_blank">汽车</a><a
+                href="http://travel.people.com.cn/" target="_blank">旅游</a><a href="http://health.people.com.cn/"
+                                                                             target="_blank">健康</a><a
+                href="http://tv.people.com.cn/" target="_blank">视频</a><a href="http://ip.people.com.cn/"
+                                                                         target="_blank">知识产权</a></div>
+        <div class="fr">
+            <div id="txz_dlq"><a id="login_button">登录</a><a href="http://sso.people.com.cn/u/reg?appCode=ENw9NE44"
+                                                            target="_blank">注册</a></div>
+            <div id="txz_dlh" style="display:none;"><span id="loginMsg"></span> <a id="logout" target="_self">退出</a>
+            </div>
+        </div>
+        <div class="p_login" id="p_login">
+            <div id="txz_dlq">
+                <p>登录人民网通行证 &nbsp;&nbsp;&nbsp;<a href="http://sso.people.com.cn/u/reg?appCode=ENw9NE44"
+                                                 class="red">立即注册</a></p>
+                <form name="loginForm" data-sso="loginForm" onssologin="loginSuccess()" onssoerror="alert(msg)">
+                    <p><input type="text" value="请输入用户名" onFocus="this.value='';this.style.color='#000';"
+                              onBlur="if(!value){value=defaultValue;this.style.color='#d0d0d0';}" name="username"
+                              data-suggest="off"/></p>
+                    <p><input type="password" value="" name="password"/></p><span style="display:none;"><input
+                        type="checkbox" name="remember" checked="checked" value="1"/><label
+                        for="rememberMe">记住登录状态</label></span>
+                    <p><a href="http://sso.people.com.cn/u/findpwd/user">忘记密码？</a></p>
+                    <p class="tc"><input type="submit" name="" value="登录" class="people_button_sub"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://www.people.com.cn/img/MAIN/2016/11/116906/js/main_login.js"
+        charset='utf-8'></script>
+<!--top end-->
+<!--通栏广告-->
+<div class="w1000 ad_column_1 clear">
+    <script type='text/javascript'
+            src='http://pmm.people.com.cn/main/s?user=people|2016channel|dingbutonglan&db=people&border=0&local=yes&js=ie&kv=people|politics;third|1024;fourth|;newsid|0'
+            charset='gbk'></script>
+</div>
+<!--pd_logo-->
+<div class="w1000 clear logo_line mt15 o_h">
+    <div class="fl"><a href="http://www.people.com.cn" target="_blank"><img
+            src="http://www.people.com.cn/img/MAIN/2016/11/116906/images/logo_rmw.png" width="120" height="46"
+            alt="人民网"/></a><span>时政</span></div>
+    <div class="fr">
+        <form action="http://search.people.com.cn/cnpeople/searchForChannel.do" name="searchForm" method="post"
+              target="_blank">
+            <input type="hidden" name="siteName" value="people"/>
+            <input type="hidden" name="pageNum" value="1"/>
+            <input type="hidden" name="totalPage" value="0"/>
+            <input type="hidden" name="channelName" value="politics"/>
+            <input type="image" src="http://www.people.com.cn/img/MAIN/2016/11/116906/images/icon2.gif"/>
+            <input type="text" name="keyword" Id="keyword" value="新闻检索"
+                   onblur="if(this.value=='') this.value='新闻检索';this.style.color='#ccc';"
+                   onfocus="if(this.value=='新闻检索') this.value='';this.style.color='#000';" class="jianso_t"/>
+        </form>
+    </div>
+</div>
+<!--导航-->
+<div class="pd_nav w1000 white mt15"><a href="http://politics.people.com.cn/" target="_blank" target='_blank'>时政首页</a><a
+        href="http://politics.people.com.cn/GB/99014/index.html" target="_blank">本网原创</a><a
+        href="http://politics.people.com.cn/GB/1024/index.html" target="_blank" target='_blank'>高层动态</a><a
+        href="http://politics.people.com.cn/GB/1027/index.html" target="_blank" target='_blank'>中央部委</a><a
+        href="http://politics.people.com.cn/GB/369059/index.html" target="_blank" target='_blank'>反腐倡廉</a><a
+        href="http://opinion.people.com.cn/GB/364827/index.html" target="_blank" target='_blank'>图解新闻</a><a
+        href="http://politics.people.com.cn/GB/389979/index.html" target="_blank" target='_blank'>时事解读</a><a
+        href="http://politics.people.com.cn/GB/8198/index.html" target="_blank" target='_blank'>时政专题</a></div>
+
+<!--即时新闻 检索-->
+<div class="jsnew_line w1000 mt20">
+    <div class="fl">
+        <span class="white">即时新闻</span>
+        <div class="gray">
+            <marquee direction="left" scrollamount="3" width="890" height="34" onmousemove="stop()"
+                     onmouseout="start()"><a href='/n1/2019/0915/c1001-31353346.html'
+                                             target="_blank">习近平主席特使辜胜阻出席穆加贝葬礼</a>
+                <a href='/n1/2019/0915/c1001-31353332.html' target="_blank">海口约谈104家企业和市场 禁止趁中秋、国庆哄抬价格</a>
+                <a href='/n1/2019/0915/c1001-31353313.html' target="_blank">参政议政搬进督查现场（大督查在行动）</a>
+                <a href='/n1/2019/0914/c1001-31353255.html' target="_blank">铁路等部门保障中秋小长假平安温馨出行</a>
+                <a href='/n1/2019/0914/c1001-31353247.html' target="_blank">“可爱的中国”之京族：一根弦也能奏出七彩乐章？聆听京族独弦琴的悠悠琴音</a>
+                <a href='/n1/2019/0914/c1001-31353056.html' target="_blank">国庆活动第二次演练 北京多个路段将采取交通管制</a>
+                <a href='/n1/2019/0914/c1001-31352877.html' target="_blank">仰望星空 逐梦飞扬（新中国的“第一”·70年）</a>
+                <a href='/n1/2019/0914/c1001-31352876.html' target="_blank">深空探测新起点（新中国的“第一”·70年）</a>
+                <a href='/n1/2019/0914/c1001-31352875.html' target="_blank">小厂拉响西洋乐</a>
+                <a href='/n1/2019/0914/c1001-31352874.html' target="_blank">第一架钢琴戴上了大红花（新中国的“第一” ·70年）</a>
+
+            </marquee>
+        </div>
+    </div>
+</div>
+<!--二级列表-->
+<div class=" w1000 ej_content mt30">
+    <div class="fl w655">
+        <div class="lujing"><a href="http://www.people.com.cn/">人民网</a> &gt;&gt; <a
+                href="http://politics.people.com.cn/">时政</a> &gt;&gt; <a href="http://politics.people.com.cn/GB/1024/">高层动态</a>
+        </div>
+        <div class="ej_list_box clear">
+            <ul class="list_16 mt10">
+                <li><a href='/n1/2019/0915/c1024-31353657.html' target=_blank>习近平：在庆祝全国人民代表大会成立六十周年大会上的讲话</a> <em>2019-09-15</em>
+                </li>
+                <li><a href='/n1/2019/0915/c1024-31353656.html' target=_blank>《求是》杂志发表习近平总书记重要文章《在庆祝全国人民代表大会成立六十周年大会上的讲话》</a>
+                    <em>2019-09-15</em></li>
+                <li><a href='/n1/2019/0913/c1024-31352408.html' target=_blank>尊重科学尊重规律 突出重点抓住关键 推动国土空间规划工作迈上新水平</a> <em>2019-09-13</em>
+                </li>
+                <li><a href='/n1/2019/0913/c1024-31352407.html' target=_blank>栗战书会见哈萨克斯坦总统托卡耶夫</a> <em>2019-09-13</em>
+                </li>
+                <li><a href='/n1/2019/0913/c1024-31352392.html' target=_blank>国家主席习近平任免驻外大使</a> <em>2019-09-13</em></li>
+                <li><a href='/n1/2019/0913/c1024-31352391.html' target=_blank>不忘初心牢记使命锐意进取 满怀信心继续把新中国巩固好发展好</a> <em>2019-09-13</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31352307.html' target=_blank>习近平视察北京香山革命纪念地</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31352306.html' target=_blank>国家主席习近平任免驻外大使</a> <em>2019-09-12</em></li>
+                <li><a href='/n1/2019/0912/c1024-31352299.html' target=_blank>习近平视察北京香山革命纪念地</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31352271.html' target=_blank>韩正在省部级干部国土空间规划专题研讨班座谈会上强调 尊重科学尊重规律
+                    突出重点抓住关键 推动国土空间规划工作迈上新水平</a> <em>2019-09-12</em></li>
+            </ul>
+            <div class="line1"></div>
+            <ul class=" list_16 mt10">
+                <li><a href='/n1/2019/0912/c1024-31350053.html' target=_blank>李克强分别会见哈萨克斯坦总统托卡耶夫和日本经济界代表团</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349992.html' target=_blank>李克强主持召开国务院常务会议</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349989.html' target=_blank>坚持守土有责 强化精准监督 确保党中央决策部署不折不扣贯彻落实</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349988.html' target=_blank>巩固和发展最广泛的爱国统一战线 汇聚起共襄伟业的磅礴力量</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349987.html' target=_blank>栗战书会见摩尔多瓦议长格雷恰尼</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349986.html' target=_blank>李克强会见贺一诚</a> <em>2019-09-12</em></li>
+                <li><a href='/n1/2019/0912/c1024-31349985.html' target=_blank>习近平同密克罗尼西亚联邦总统帕努埃洛互致贺电庆祝中密建交30周年</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349984.html' target=_blank>习近平会见贺一诚</a> <em>2019-09-12</em></li>
+                <li><a href='/n1/2019/0912/c1024-31349983.html' target=_blank>习近平同哈萨克斯坦总统托卡耶夫会谈</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0912/c1024-31349982.html' target=_blank>汪洋在统一战线庆祝中华人民共和国成立70周年座谈会上强调
+                    巩固和发展最广泛的爱国统一战线 汇聚起共襄伟业的磅礴力量</a> <em>2019-09-12</em></li>
+            </ul>
+            <div class="line1"></div>
+            <ul class=" list_16 mt10">
+                <li><a href='/n1/2019/0912/c1024-31349981.html' target=_blank>李克强会见日本经济界代表团并座谈</a> <em>2019-09-12</em>
+                </li>
+                <li><a href='/n1/2019/0911/c1024-31349977.html' target=_blank>李克强会见哈萨克斯坦总统托卡耶夫</a> <em>2019-09-11</em>
+                </li>
+                <li><a href='/n1/2019/0911/c1024-31349974.html' target=_blank>李克强主持召开国务院常务会议</a> <em>2019-09-11</em>
+                </li>
+                <li><a href='/n1/2019/0911/c1024-31349973.html' target=_blank>习近平同哈萨克斯坦总统托卡耶夫举行会谈 两国元首一致决定
+                    发展中哈永久全面战略伙伴关系</a> <em>2019-09-11</em></li>
+                <li><a href='/n1/2019/0911/c1024-31349972.html' target=_blank>赵乐际在河北调研时强调 坚持守土有责 强化精准监督
+                    确保党中央决策部署不折不扣贯彻落实</a> <em>2019-09-11</em></li>
+                <li><a href='/n1/2019/0911/c1024-31349896.html' target=_blank>栗战书会见摩尔多瓦议长格雷恰尼</a> <em>2019-09-11</em>
+                </li>
+                <li><a href='/n1/2019/0911/c1024-31349855.html' target=_blank>中哈宣布发展永久全面战略伙伴关系</a> <em>2019-09-11</em>
+                </li>
+                <li><a href='/n1/2019/0911/c1024-31349850.html' target=_blank>习近平会见贺一诚</a> <em>2019-09-11</em></li>
+                <li><a href='/n1/2019/0911/c1024-31349849.html' target=_blank>李克强会见贺一诚 颁发任命贺一诚为澳门特区第五任行政长官的国务院令</a> <em>2019-09-11</em>
+                </li>
+                <li><a href='/n1/2019/0911/c1024-31349809.html' target=_blank>习近平同密克罗尼西亚联邦总统帕努埃洛互致贺电 庆祝中密建交30周年</a> <em>2019-09-11</em>
+                </li>
+            </ul>
+            <div class="page_n clearfix">&nbsp;&nbsp;<a class="common_current_page">1</a>&nbsp;<a
+                    href='index2.html'>2</a>&nbsp;<a href='index3.html'>3</a>&nbsp;<a href='index4.html'>4</a>&nbsp;<a
+                    href='index5.html'>5</a>&nbsp;<a href='index6.html'>6</a>&nbsp;<a href='index7.html'>7</a>&nbsp;&nbsp;&nbsp;<a
+                    href='index2.html'>下一页</a></div><!--all page--><!--PageNo=7-->
+        </div>
+
+    </div>
+    <div class="fr w310">
+
+
+        <h3 class="tit_f24 mt10"><i><a href="http://politics.people.com.cn/GB/385431/index.html"
+                                       target='_blank'>热点专题</a></i></h3>
+        <div class="img_box img_box1 bgc_gray"><a href="http://politics.people.com.cn/GB/8198/426296/index.html"
+                                                  target="_blank"><img
+                src="/NMediaFile/2019/0722/MAIN201907221328129626017907597.jpg" width="310" height="200" border="0"
+                alt="壮丽70年 奋斗新时代 &#13;今年是新中国成立70周年。70年砥砺奋进，我们的国家发生了天翻地覆的变化。为充分展示共和国70年来的伟大历程和宝贵经验，生动反映党的十八大以来的历史性变革和成就，即日起，人民网推出“壮丽70年 奋斗新时代”专题，通过记者的一线调研采访，挖掘报道新时代各地区各部门蹄疾步稳推进高质量发展的措施成效和经验做法，营造共庆祖国华诞、共享伟大荣光、共铸复兴伟业的浓厚氛围。"/></a><a
+                href="http://politics.people.com.cn/GB/8198/426296/index.html" target="_blank"><STRONG>壮丽70年
+            奋斗新时代</STRONG>
+            <P style="TEXT-INDENT: 2em" align=left>
+                今年是新中国成立70周年。70年砥砺奋进，我们的国家发生了天翻地覆的变化。为充分展示共和国70年来的伟大历程和宝贵经验，生动反映党的十八大以来的历史性变革和成就，即日起，人民网推出“壮丽70年
+                奋斗新时代”专题，通过记者的一线调研采访，挖掘报道新时代各地区各部门蹄疾步稳推进高质量发展的措施成效和经验做法，营造共庆祖国华诞、共享伟大荣光、共铸复兴伟业的浓厚氛围。</P></a></div>
+        <div class="img_box img_box1 bgc_gray"><a href="http://politics.people.com.cn/GB/8198/427468/index.html"
+                                                  target="_blank"><img
+                src="/NMediaFile/2019/0722/MAIN201907221328122659813433044.jpg" width="310" height="200" border="0"
+                alt="记者再走长征路 &#13;“壮丽70年·奋斗新时代——记者再走长征路”主题采访活动正在如火如荼地开展。人民网推出专题报道，跟随记者足迹，再次踏上红色土地，不忘初心使命、传承革命精神的嘱托，坚定理想信念，保持革命意志，用双脚踏寻革命先辈的足迹，用镜头和笔触描绘新中国70年的壮美画卷，激励全国人民奋力走好新时代的长征路。"/></a><a
+                href="http://politics.people.com.cn/GB/8198/427468/index.html" target="_blank"><STRONG>记者再走长征路</STRONG>
+            <P style="TEXT-INDENT: 2em" align=left>
+                “壮丽70年·奋斗新时代——记者再走长征路”主题采访活动正在如火如荼地开展。人民网推出专题报道，跟随记者足迹，再次踏上红色土地，不忘初心使命、传承革命精神的嘱托，坚定理想信念，保持革命意志，用双脚踏寻革命先辈的足迹，用镜头和笔触描绘新中国70年的壮美画卷，激励全国人民奋力走好新时代的长征路。</P>
+        </a></div>
+        <div class="img_box img_box1 bgc_gray"><a href="http://politics.people.com.cn/GB/8198/428497/index.html"
+                                                  target="_blank"><img
+                src="/NMediaFile/2019/0813/MAIN201908131034346626157538776.jpg" width="310" height="200" border="0"
+                alt="庆祝人民政协成立70周年 &#13; 今年是中华人民共和国成立70周年，也是人民政协成立70周年。70年砥砺奋进，70年披荆斩棘，70年风雨同舟，人民政协高举爱国主义旗帜、社会主义旗帜，牢牢把握团结和民主两大主题，在与时代同发展、与祖国共奋进的道路上留下了不可磨灭的印记。人民网推出“庆祝人民政协成立70周年”专题，梳理总结人民政协70年特别是中共十八大以来的理论创新、制度创新成果，报道新时期政协履职新举措、建言献策新成就，充分展示人民政协70年来的伟大历程和宝贵经验，展现社会主义民主政治发展道路上的新活力。"/></a><a
+                href="http://politics.people.com.cn/GB/8198/428497/index.html"
+                target="_blank"><STRONG>庆祝人民政协成立70周年</STRONG>
+            <P style="TEXT-INDENT: 2em" align=left>
+                今年是中华人民共和国成立70周年，也是人民政协成立70周年。70年砥砺奋进，70年披荆斩棘，70年风雨同舟，人民政协高举爱国主义旗帜、社会主义旗帜，牢牢把握团结和民主两大主题，在与时代同发展、与祖国共奋进的道路上留下了不可磨灭的印记。人民网推出“庆祝人民政协成立70周年”专题，梳理总结人民政协70年特别是中共十八大以来的理论创新、制度创新成果，报道新时期政协履职新举措、建言献策新成就，充分展示人民政协70年来的伟大历程和宝贵经验，展现社会主义民主政治发展道路上的新活力。</P>
+        </a></div>
+        <div class="img_box img_box1 bgc_gray"><a href="http://politics.people.com.cn/GB/8198/426918/index.html"
+                                                  target="_blank"><img
+                src="/NMediaFile/2019/0722/MAIN201907221328125920363014073.jpg" width="310" height="200" border="0"
+                alt="中国经济行不行？ &#13;中美贸易摩擦再度升级。美方无视中方富有诚意的态度与行动，于华盛顿时间2019年5月10日0点01分开始，对2000亿美元中国输美商品加征的关税从10%上调至25%。中方同步发表声明，宣布不得不采取必要反制措施。人民日报推出系列深度报道，详解中国经济底气，带您看清中美贸易摩擦大势。"/></a><a
+                href="http://politics.people.com.cn/GB/8198/426918/index.html" target="_blank"><STRONG>中国经济行不行？</STRONG>
+            <P style="TEXT-INDENT: 2em" align=left>
+                中美贸易摩擦再度升级。美方无视中方富有诚意的态度与行动，于华盛顿时间2019年5月10日0点01分开始，对2000亿美元中国输美商品加征的关税从10%上调至25%。中方同步发表声明，宣布不得不采取必要反制措施。人民日报推出系列深度报道，详解中国经济底气，带您看清中美贸易摩擦大势。</P>
+        </a></div>
+
+
+    </div>
+</div>
+<!--底部背景色-->
+<div class="linksbg clearfix">
+    <!--分站与友情链接-->
+    <!--版权-->
+    <footer class="clearfix">
+        <p><a href="http://www.people.com.cn/GB/1018/22259/index.html" target="_blank">人民日报社概况</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/GB/50142/420117/index.html" target="_blank">关于人民网</a>
+            <span class="xian">|</span>
+            <a href="http://hr.peopledaily.com.cn/" target="_blank">报社招聘</a>
+            <span class="xian">|</span>
+            <a href="http://job.people.com.cn/" target="_blank">招聘英才</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/GB/208743/403202/index.html" target="_blank">广告服务</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/GB/208743/403202/403212/index.html" target="_blank">合作加盟</a>
+            <span class="xian">|</span>
+            <a href="http://gonggao.people.com.cn/" target="_blank">供稿服务</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/n/2013/1227/c373005-23961344.html" target="_blank">网站声明</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/n1/2019/0308/c420117-30965009.html" target="_blank">网站律师</a>
+            <span class="xian">|</span>
+            <a href="http://sso.people.com.cn/resource/html/userInforPro.html" target="_blank">信息保护</a>
+            <span class="xian">|</span>
+            <a href="http://kf.people.com.cn/" target="_blank">呼叫中心</a>
+            <span class="xian">|</span>
+            <a href="http://english.peopledaily.com.cn/" target="_blank">ENGLISH</a>
+        </p>
+        <p>镜像:<a href="http://www.people.com.cn/" target="_blank">日本</a>&nbsp;&nbsp;<a
+                href="http://www.peopledaily.edu.cn/" target="_blank">教育网</a>&nbsp;&nbsp;<a
+                href="http://www.peopledaily.ac.cn/">科技网</a>&nbsp;&nbsp;呼叫热线：4008-100-300&nbsp;&nbsp;服务邮箱：<a
+                href="mailto:kf@people.cn" target="_blank">kf@people.cn</a>&nbsp;&nbsp;违法和不良信息举报电话：010-65363263&nbsp;&nbsp;举报邮箱：<a
+                href="mailto:jubao@people.cn" target="_blank">jubao@people.cn</a></p>
+        <p><a href="http://www.people.com.cn/img/2014xuke/2018hlwxw.html" target="_blank">互联网新闻信息服务许可证10120170001</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/img/2014xuke/2018zzdxxkz.html" target="_blank">增值电信业务经营许可证B1-20060139</a>
+        </p>
+        <p><a href="http://www.people.com.cn/img/2011zzzs/2018xxwlcb.htm" target="_blank">信息网络传播视听节目许可证0104065</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/img/2014xuke/2018gbds.htm" target="_blank">广播电视节目制作经营许可证（广媒）字第172号</a>
+        </p>
+        <p><a href="http://www.people.com.cn/img/2014xuke/2018wlwh.html" target="_blank">网络文化经营许可证
+            京网文[2017]9786-1126号</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/img/2014xuke/2018wlcb.html" target="_blank">网络出版服务许可证（京）字258号</a>
+            <span class="xian">|</span>
+            <a href="http://www.people.com.cn/img/2014xuke/2018icp.html" target="_blank">京ICP证000006号</a>
+            <span class="xian">|</span>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000008" target="_blank">京公网安备11000002000008号</a>
+        </p>
+        <p class="mt30">人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用<br/>Copyright &copy; 1997-2019 by www.people.com.cn. all
+            rights reserved</p>
+        <p class="mt30">
+            <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0102000101300040" target="_blank"><img
+                    src="http://www.people.com.cn/img/2016people/images/copy_icon1.jpg"/></a>　　
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e12050911010020686307708&ct=df&a=1&pa=980951" target="_blank"><img
+                    src="http://www.people.com.cn/img/2016people/images/copy_icon2.jpg"/></a>　　
+            <a href="http://si.trustutn.org/info?sn=470170320027574551118&certType=1" target="_blank"><img
+                    src="http://www.people.com.cn/img/2016people/images/copy_icon3.jpg"/></a>　　
+            <a href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/2710933198.html" target="_blank"><img
+                    src="http://www.people.com.cn/img/2016people/images/copy_icon4.jpg"/></a>
+        </p>
+    </footer>
+</div>
+
+<!--2017统计代码频道-->
+<!--2017统计代码-->
+<script language="javascript">
+    var _paq = _paq || [];
+    window['_paq'] = _paq;
+    _paq.push(['appkey', 'UAR-000179_957']);
+    _paq.push(['cata', '1024']);
+    _paq.push(['trackPV']);
+    (function () {
+        var pa = document.createElement('script');
+        pa.type = 'text/javascript';
+        pa.async = true;
+        pa.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'js.people.cn/js/pa.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(pa, s);
+    })();
+</script>
+<script src="http://tools.people.com.cn/css/2010tianrun/webdig_test.js" language="javascript" type="text/javascript"
+        async></script>
+
+</body>
+</html>
+
+

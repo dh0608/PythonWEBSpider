@@ -1,0 +1,7 @@
+CREATE DATABASE proxyip
+CREATE TABLE proxyip(
+	id VARCHAR(32) PRIMARY KEY,
+	ip VARCHAR(255),
+	`port` VARCHAR(255),
+	protocal VARCHAR(255)	
+)
