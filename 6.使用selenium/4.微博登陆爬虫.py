@@ -3,8 +3,8 @@ import time
 import pickle
 import random
 
-loginname = '18638653640'
-password = 'Zx06080520'
+loginname = '账号用户名'
+password = '账号密码'
 
 
 # 模拟登陆微博
